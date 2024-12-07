@@ -1,0 +1,11 @@
+1.To start docker container
+
+not worked - docker run -t --rm -p 8601:8601 -v C:\Users\VenuraP\Desktop\Browns-Data Projects\ML-Projects\POC\Potato-Disease-Detection-Project:/Potato-Disease-Detection-Project tensorflow/serving --rest_api_port=8601 --model_config_file=/models.config
+
+worked -docker run -p 8501:8501 --name=potato -v "C:\Users\VenuraP\Desktop\Browns-Data-Projects\ML-Projects\POC\Potato-Disease-Detection-Project\potato:/models/potato/1" -e MODEL_NAME=potato tensorflow/serving
+
+2.To serve only latest model
+
+
+3.To serve models using model config file
+
